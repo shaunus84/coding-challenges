@@ -47,6 +47,4 @@ Maps can be any m x n dimension.
 Maps will always have at least 1 element. m >= 1 and n >= 1.
 */
 
-using namespace std;
-
-int largestIsland(vector<vector<int>> map) { return 0; }
+int largestIsland(std::vector<std::vector<int>> map);
