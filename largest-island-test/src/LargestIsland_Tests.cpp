@@ -40,3 +40,33 @@ TEST(LargestIsland, TEST9) { ASSERT_EQ(largestIsland({{1}, {0}, {1}}), 1); }
 TEST(LargestIsland, TEST10) {
   ASSERT_EQ(largestIsland({{1, 1, 1}, {0, 1, 1}, {0, 0, 1}}), 6);
 }
+
+TEST(LargestIsland, TEST11) {
+  ASSERT_EQ(
+      largestIsland(
+        {
+              {1, 1, 0, 0, 1, 1, 1 },
+              {0, 1, 1, 0, 1, 1, 1 },
+              {0, 0, 1, 0, 1, 0, 1 },
+              {1, 0, 1, 0, 0, 0, 0 },
+              {1, 0, 1, 0, 1, 1, 1 },
+              {1, 0, 0, 0, 1, 1, 1 },
+              {1, 0, 1, 0, 1, 1, 1 },
+        }
+    ), 9);
+}
+
+TEST(LargestIsland, TEST12) {
+  ASSERT_EQ(
+      largestIsland(
+        {
+              {1, 1, 1, 1, 1, 1, 1 },
+              {1, 0, 0, 0, 0, 0, 1 },
+              {1, 0, 1, 1, 1, 0, 1 },
+              {1, 0, 1, 0, 1, 0, 1 },
+              {1, 0, 1, 1, 1, 0, 1 },
+              {1, 0, 0, 0, 0, 0, 1 },
+              {1, 1, 1, 1, 1, 1, 1 },
+        }
+    ), 24);
+}
